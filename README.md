@@ -1,15 +1,21 @@
-# Projeto Analytics - Análise de Saúde
+#  Projeto Analytics – Análise de Saúde
 
-Este repositório contém uma análise exploratória, visualização interativa e predição de risco em saúde utilizando Python, Streamlit, pandas, plotly e scikit-learn.
+Este repositório contém uma **análise exploratória de dados de saúde**, com **visualização interativa** e **predição de risco** utilizando **Python, Streamlit, pandas, plotly e scikit-learn**.  
 
-## Estrutura do Projeto
+ **Acesse o dashboard online aqui:** [Projeto Analytics - Streamlit App](https://projetoanalytics-ipqvruv7dlftokwavytnla.streamlit.app)
+
+---
+
+##  Estrutura do Projeto
 
 - `dados/` : Base de dados utilizada na análise (`Medicaldataset.csv`).
 - `scripts/` : Scripts Python, incluindo o dashboard Streamlit (`app_streamlit.py`).
 - `README.md` : Este arquivo de documentação.
 - `.gitignore` : Arquivos e pastas ignorados pelo Git.
 
-## Como rodar o dashboard
+---
+
+##  Como rodar o dashboard localmente
 
 1. Instale as dependências:
    ```bash
@@ -20,26 +26,33 @@ Este repositório contém uma análise exploratória, visualização interativa 
    streamlit run scripts/app_streamlit.py
    ```
 
-## Requisitos
+---
+
+##  Requisitos
+
 - Python 3.8+
-- pandas
-- plotly
-- scikit-learn
-- streamlit
-
-
-## Insights e Principais Resultados
-
-- **Distribuição dos Resultados:** Aproximadamente 61% dos pacientes possuem resultado positivo para o desfecho analisado, enquanto 39% são negativos.
-- **Idade:** A idade média dos pacientes é de cerca de 58 anos, com predominância de casos positivos em faixas etárias mais elevadas.
-- **Pressão Sistólica:** Mais de 95% dos pacientes apresentam algum grau de hipertensão (pré-hipertensão ou hipertensão estágio 1/2), sendo que a maioria dos positivos está nas faixas mais altas de pressão.
-- **Glicose:** Pacientes com glicose elevada têm maior proporção de resultados positivos, indicando associação entre glicemia e risco.
-- **Correlação entre Variáveis:** As maiores correlações absolutas encontradas foram entre CK-MB e Troponin, e entre pressão sistólica e troponina, sugerindo relação entre marcadores cardíacos e pressão.
-- **Outliers:** Foram identificados outliers principalmente nas variáveis laboratoriais (CK-MB, Troponin, Glicose), o que pode indicar casos graves ou erros de medição.
-- **Modelo Preditivo:** O modelo Random Forest foi capaz de prever o risco de resultado positivo com boa performance, utilizando apenas idade, glicose e pressão sistólica.
-- **Dados Limpos:** O dataset não apresentou valores ausentes após o tratamento, garantindo robustez nas análises.
-- **Visualização Interativa:** O dashboard permite explorar diferentes cenários e simular o risco para novos pacientes, facilitando a tomada de decisão.
+- pandas  
+- plotly  
+- scikit-learn  
+- streamlit  
 
 ---
 
-Projeto desenvolvido para análise de dados de saúde, visualização interativa e predição de risco para novos pacientes.
+##  Insights e Principais Resultados
+
+- **Distribuição dos Resultados:** Aproximadamente **61%** dos pacientes possuem resultado positivo para o desfecho analisado, enquanto **39%** são negativos.  
+- **Idade:** Idade média de ~58 anos, com predominância de casos positivos em faixas etárias mais elevadas.  
+- **Pressão Sistólica:** Mais de **95%** dos pacientes apresentam algum grau de hipertensão, principalmente entre os casos positivos.  
+- **Glicose:** Pacientes com glicose elevada têm maior proporção de resultados positivos, sugerindo associação com o risco.  
+- **Correlação entre Variáveis:** As maiores correlações foram entre **CK-MB e Troponin** e entre **pressão sistólica e troponina**.  
+- **Outliers:** Identificados principalmente em CK-MB, Troponin e Glicose, podendo indicar casos graves ou erros de medição.  
+- **Modelo Preditivo:** O modelo **Random Forest** obteve boa performance utilizando **idade, glicose e pressão sistólica** como variáveis principais.  
+- **Dados Limpos:** O dataset não apresentou valores ausentes após o tratamento, aumentando a confiabilidade da análise.  
+- **Visualização Interativa:** O **dashboard** permite explorar cenários e simular risco para novos pacientes.  
+
+---
+
+##  Contato
+
+Desenvolvido por **Noam Coelho**.  
+Dúvidas ou sugestões? Abra uma [issue](https://github.com/noamcoelho/Projeto_analytics/issues) ou acesse o dashboard interativo no [Streamlit](https://projetoanalytics-ipqvruv7dlftokwavytnla.streamlit.app).
